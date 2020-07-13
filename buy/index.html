@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> buyer registration</title>
+        <link href="style.css" rel="stylesheet">
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+
+    <body>
+
+
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href"#"><img src="img/Refarm BG 3.png"></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+     
+     <div class="collapse navbar-collapse" id="navbarResponsive">
+     
+     
+         <form class="form-inline center">
+             <input class="form-control mr-sm-2" type="search"
+             placeholder="Search" aria-label="Search">
+             <button class="btn btn-light my-sm-0" type="submit">
+                 <i class="fa fa-search fa-0.5x"></i> 
+             </button>
+         </form>
+         
+         <ul class="navbar-nav ml-auto ">
+            <li class="nav-items">
+                <a class="nav-link" href="#home">HOME</a>
+            </li>
+     
+            <li class="nav-items">
+             <a class="nav-link" href="#about">ABOUT</a>
+         </li>
+     
+         <li class="nav-items">
+                <a class="nav-link" href="#features">FEATURES</a>
+            </li> 
+            
+            <li class="nav-items">
+             <a class="nav-link" href="#services">SERVICES</a>
+         </li> 
+     
+         <li class="nav-items">
+             <a class="nav-link" href="#products">PRODUCTS</a>
+         </li> 
+     
+          
+     
+         <li class="nav-items">
+             <a class="nav-link" href="#team">TEAM</a>
+         </li> 
+     
+         <li class="nav-items">
+             <a class="nav-link" href="#contact">CONTACT</a>
+         </li>
+     
+     </ul>
+     
+     </div>
+     </div>
+      
+     </nav> 
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     
+
+<!----Start Services Section-->
+<div id="services" class="offset" >
+  <div class="fixed-background" >
+      <div class="row dark ">
+          <div class="col-12" >
+              <h3 class="heading ">BUYER DETAILS</h3>
+              <h5> Please provide your details to connect with us</h5>
+              
+          </div>
+          <hr>
+         <br>
+         <br>
+         
+      <br>
+      <form>
+      
+        <div class="form-group" >
+          <label >Full Name</label>
+          <input type="text" 
+           class="form-control " placeholder=" Enter the Full Name">
+    
+        </div>
+    
+    
+        <div class="form-group">
+          <label >Contact Information</label>
+          <input type="text" 
+           class="form-control " placeholder=" Email or Mobile Number ">
+    
+        </div>   
+        <button  class="btn btn-primary" type="submit"  > Register </button>
+  </form>
+  
+      </div><!--end of dark theme-->
+    <div class="fixed-wrap">
+        <div class="fixed">
+  
+        </div>
+    </div>
+  </div><!--end of fixed background-->
+      </div>
+      <!----End  Services Section-->
+  
+  <br>
+  <br>
+<div >
+ <h1 >Complete your Profile...</h1>
+</div>
+        <div class="row no-gutters "  >
+            <div class="col no-gutters  " >
+                <div class="leftside" >
+
+
+                    <div class="container-fluid" style="background: url(img/1.jpg);" >
+                        <div class="regform" >
+                        <h1>Profile Info </h1></div>
+                        <div class="main">
+                        <form #buyersForm="ngForm">
+                      
+                      
+                      
+                      
+                          <div class="form-group">
+                            <label >Name</label>
+                            <input type="text" 
+                             class="form-control " placeholder=" Business Name ">
+                      
+                          </div>
+                      
+                      
+                      
+                      
+                      
+                      
+                          <div class="form-group">
+                            <label >Email</label>
+                            <input type="email" class="form-control" placeholder="Email" >
+                      
+                          </div>
+                      
+                          <div class="form-group">
+                            <label >Password</label>
+                            <input type="password" class="form-control" name="Password" ngModel>
+                      
+                          </div>
+                      
+                      
+                          <div class="form-group" style="float: left;">
+                            <label  >Phone</label>
+                            <input type="tel" #phone="ngModel" pattern="^\d{10}$"
+                            [class.is-invalid]="phone.invalid && phone.touched" class="form-control" style="width: 120%;" name="Phone Number "[(ngModel)]="buyersModel.phone">
+                            
+                          </div>
+                          <br>
+                      
+                          <div class="form-group" style="float: right;">
+                      <label  > Pincode</label>
+                      <input type="tel" #pincode="ngModel" pattern="^\d{6}" [class.is-invalid]="pincode.invalid && pincode.touched " class="form-control" style="width: 100%;" style="margin-right: 5rem;" name="Pincode" ngModel>
+                          </div>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <div class="form-group" style="float: left;">
+                        <label  >Street Name</label>
+                        <input type="tel" class="form-control" style="width: 120%;" name="Street Name" ngModel>
+                      </div>
+                      <div class="form-group" style="float: right;">
+                      <label  > City</label>
+                      <input type="tel" class="form-control" style="width: 100%;" style="margin-right: 5rem;" name="City Name" ngModel>
+                      </div>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <div class="form-group">
+                        <label  >State</label>
+                        <input type="text" class="form-control" name=" State Name "ngModel>
+                      
+                      </div>
+                      <br>
+                      
+                          <div class="form-group">
+                            <label >Select the categories</label>
+                            
+  
+                     
+                      
+                      </div>
+                      
+                      
+                      <label class="checkbox-inline" >
+                        <input type="checkbox" value="" >vegetables
+                      </label>
+                      <label class="checkbox-inline" >
+                        <input type="checkbox" value="">Fruits
+                      </label>
+                      <label class="checkbox-inline" >
+                        <input type="checkbox" value="">Pulses
+                      </label>
+                      <br><br>
+
+                      
+
+
+
+
+
+
+
+
+                      
+                      <button  class="btn btn-primary" type="submit" > Register</button>
+                      
+                        </form>
+                      </div>
+                      </div>
+                      
+
+                </div>
+            </div>
+            
+
+        
+
+
+
+
+
+
+
+        
+            <div class="col no-gutters ">
+                <div class="rightside"  >
+                
+            </div>
+        
+        </div>
+      </div>
+
+
+
+
+
+      
+    </body>
+</html>
