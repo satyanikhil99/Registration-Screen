@@ -18,6 +18,7 @@
     height:100%;
     position: relative;
     background: url(img/india.png);
+    margin-right:15px;
 }
 .navbar {
     text-transform: uppercase;
