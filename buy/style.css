@@ -2,23 +2,24 @@
     height:100vh;
     width:100%;
 
+
 }
 .leftside {
     
     padding-top: 10rem;
     margin-top:20px;
-    margin-left:15px;
-    
+    margin-left: 15px;
     
 }
 .rightside{
     
     padding-top: 10rem;
-    margin-bottom:250px;
+    margin-top:20px;
     height:100%;
-    position: relative;
+    margin-left: 30px;
     background: url(img/india.png);
-    margin-right:15px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
 }
 .navbar {
     text-transform: uppercase;
@@ -58,6 +59,7 @@
     color: #fff;
     padding: 7rem 3rem;
     background-image: url(img/1.jpg);
+    background-repeat: unset;
   }
   
   .fixed-background h3 {
